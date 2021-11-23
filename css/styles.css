@@ -1,25 +1,13 @@
 body {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
-h1 {
+.big-header {
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 900;
   margin-bottom: 25px;
-}
-
-h2 {
-    font-weight: 800;
-    margin: 10px;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: black;
-  padding: 10px;
-  margin-bottom: 0rem;
 }
 
 .navbar {
@@ -35,7 +23,7 @@ button {
 }
 
 .iphone-img {
-    position: relative;
+  position: relative;
 }
 
 .title-image {
@@ -68,6 +56,22 @@ button {
 #title {
   background-color: #ff4c68;
   color: white;
+  text-align: left;
+}
+
+@media (max-width: 962px) {
+  #title {
+    text-align: center;
+  }
+
+  .iphone-img {
+    position: static;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
 
 /* Features */
@@ -87,7 +91,6 @@ button {
 }
 
 .features-item {
-  text-align: center;
 }
 
 .features-text {
@@ -96,16 +99,22 @@ button {
   margin: auto;
 }
 
-#features{
+#features {
   background-color: white;
   position: relative;
   z-index: 1;
+}
+.features-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: black;
+  padding: 10px;
+  margin-bottom: 0rem;
 }
 
 /* Testimonials */
 #testimonials {
   background-color: #ef8172;
-  text-align: center;
   color: white;
 }
 
@@ -119,10 +128,14 @@ button {
   margin: 20px;
 }
 
+.testimonial-text {
+  font-weight: 800;
+  margin: 10px;
+}
+
 /* Press */
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 .press-img {
@@ -142,9 +155,51 @@ button {
 
 #pricing {
   padding: 100px;
-  text-align: center;
 }
 
 .pricing-column {
   padding: 3% 2%;
 }
+
+.pricing-head {
+  font-weight: 800;
+  margin: 10px;
+}
+.pricing-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: black;
+  padding: 10px;
+  margin-bottom: 0rem;
+}
+
+/* Call to Action */
+.cta-header {
+  font-size: 3rem;
+  color: white;
+  font-weight: 900;
+  width: 70%;
+  margin: auto;
+  line-height: 1.5;
+}
+
+#cta {
+  background-color: #ff4c68;
+  padding-top: 50px;
+}
+
+.download-button-cta {
+  margin: 5% 3% 5% 0;
+}
+
+/* Footer */
+#footer {
+  margin: 100px auto;
+}
+.foot-icon {
+  margin: 10px;
+}
+.copyright {
+  margin-top: 20px;
+}
+
